@@ -188,11 +188,18 @@ footer {
 
 .project-wrapper {
 	.flexbox-property();
+	padding: 10px;
+	justify-content: center;
 	.image-wrapper {
-		width: 23%;
 		margin: 0 20px 10px;
 		display: flex;
 		align-items: center;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
 	}
 	.text-wrapper {
 		width: 43%;
