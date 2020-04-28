@@ -184,6 +184,19 @@ header a:hover {
   animation-duration: 2s;
   font-weight: bold;
 }
+@media only screen and (max-width: 360px) {
+  header {
+    margin: 0px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header nav a {
+    padding: 5px 20px;
+    border-bottom: 1px solid darkgray;
+  }
+}
 .intro-wrapper {
   display: flex;
   justify-content: space-around;
@@ -229,6 +242,12 @@ header a:hover {
     padding-bottom: 20px;
     margin: 0 10px;
   }
+  .intro-wrapper .jeff-pic {
+    width: 90%;
+  }
+  .intro-wrapper .intro {
+    width: 90%;
+  }
 }
 .middle-wrapper {
   display: flex;
@@ -248,6 +267,17 @@ header a:hover {
 @media only screen and (max-width: 500px) {
   .middle-wrapper {
     margin: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .middle-wrapper {
+    flex-direction: column-reverse;
+  }
+  .middle-wrapper .about {
+    width: 90%;
+  }
+  .middle-wrapper .skills {
+    width: 90%;
   }
 }
 .work-history {

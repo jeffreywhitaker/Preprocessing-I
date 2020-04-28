@@ -111,6 +111,17 @@ header {
 	}
 	a:hover {
 		.hover();
+  }
+  @media only screen and (max-width: 360px){
+    margin: 0px;
+		nav {
+      display: flex;
+      flex-direction: column-reverse;
+      a {
+        padding: 5px 20px;
+        border-bottom: 1px solid darkgray;
+      }
+    }
 	}
 }
 
@@ -149,7 +160,13 @@ header {
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 20px;
-		margin: 0 10px;
+    margin: 0 10px;
+    .jeff-pic {
+      width: 90%;
+    }
+    .intro {
+      width: 90%;
+    }
 	}
 }
 
@@ -165,7 +182,16 @@ header {
 	}
 	@media only screen and (max-width: 500px){
 		margin: 10px;
-	}
+  }
+  @media only screen and (max-width: 400px){
+    flex-direction: column-reverse;
+    .about {
+      width: 90%;
+    }
+    .skills {
+      width: 90%;
+    }
+  } 
 }
 
 .work-history {
