@@ -333,12 +333,35 @@ footer {
   padding: 5px 10px;
   margin-top: 10px;
 }
-.project-wrapper .flipped {
-  flex-direction: row-reverse;
+@media only screen and (max-width: 900px) {
+  .project-wrapper .image-wrapper img {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .project-wrapper .image-wrapper img {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .project-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 500px) {
   .project-wrapper {
     margin: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .project-wrapper .image-wrapper img {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .reverse {
+    flex-direction: column;
   }
 }
 .blog-wrapper {
