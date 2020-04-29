@@ -74,7 +74,6 @@ html, body {
 	display: flex;
 	justify-content: space-around; 
 	margin: 10px auto;
-	padding: 10px auto;
 	border-bottom: 1px solid @font-color-main;
 }
 
@@ -241,31 +240,15 @@ footer {
 			margin-top: 10px;
 		}
 	}
-	@media only screen and (max-width: 900px){
-    .image-wrapper {
-      img {
-        height: 200px;
-      } 
-    }
-  }
-  @media only screen and (max-width: 800px){
-    .image-wrapper {
-      img {
-        height: 150px;
-      } 
-    }
-  }
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 900px){
     flex-direction: column-reverse;
     align-items: center;
-  }
-	@media only screen and (max-width: 500px){
-    margin: 10px;
-  }
-  @media only screen and (max-width: 350px){
     .image-wrapper {
+      margin: 10px;
       img {
-        height: 80px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
       }
     }
   }
