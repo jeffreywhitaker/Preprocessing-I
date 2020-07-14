@@ -28,6 +28,18 @@
     gtag('config', 'UA-172657976-1');
   </script>
 
+  <script>
+    function clickMoodBloomLink() {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Project Link',
+        eventAction: 'click',
+        eventLabel: 'Moodbloom'
+      }
+      )
+    }
+  </script>
+
 </head>
 
 <body>
@@ -58,7 +70,7 @@
             data as a PDF.
           </p>
           <button>
-            <a href="https://moodbloomapp.com" target="_blank">Website</a>
+            <a href="https://moodbloomapp.com" target="_blank" onclick="clickMoodBloomLink">Website</a>
           </button>
           <button>
             <a href="https://github.com/Lambda-School-Labs/ema-therapy-fe" target="_blank">Frontend Github</a>
