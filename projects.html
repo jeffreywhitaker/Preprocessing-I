@@ -29,14 +29,11 @@
   </script>
 
   <script>
-    function clickMoodBloomLink() {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Project Link',
-        eventAction: 'click',
-        eventLabel: 'Moodbloom'
-      }
-      )
+    function clickMoodBloomLink(event) {
+      gtag('event', 'click', {
+        'event_category': 'Portfolio Link',
+        'event_label': event.target.href
+      });
     }
   </script>
 
